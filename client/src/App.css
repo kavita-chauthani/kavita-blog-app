@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "urbanist";
+}
+
+p,
+li,
+a,
+button {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+}
+a:hover {
+  color: #2e86c1;
+  text-decoration: underline;
+}
+
+header {
+  height: 10rem;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  background-color: #d4e6f1;
+  width: 100%;
+}
+
+.container {
+  max-width: 132rem;
+  height: 10rem;
+  margin: 0 10rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-three-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.navbar-grid {
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  align-items: center;
+  height: 10rem;
+}
+.blogs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+.logout {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: end;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.2rem;
+}
+
+.ham-menu {
+  display: none;
+}
+
+@media screen and (max-width: 998px) {
+  .menu-web {
+    display: none;
+  }
+  .ham-menu {
+    display: inline-block;
+    text-align: end;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+  }
+  .mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & li:first-child {
+      margin-top: 1.2rem;
+    }
+
+    & li:last-child {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+.log {
+  margin-left: 22rem;
+}
